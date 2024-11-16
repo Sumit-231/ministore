@@ -1,0 +1,326 @@
+.menu{
+    z-index: 1;
+    width: 100%;
+    position: fixed;
+}
+#checkbox{
+	visibility: hidden;
+}
+.dark-mode {
+	background-color: black;
+	color: white;
+  }
+.light-mode {
+	background-color: white;
+	color: black;
+  }
+.toggle_label{
+	width: 2rem;
+	height: 1.5rem;
+	background-color: black;
+	display: inline-block;
+	position: relative;
+	border-radius: 8rem;
+	text-align: left;
+}
+.toggle_ball{
+	width: 1rem;
+	height: 1rem;
+	border-radius: 100%;
+	background-color: white;
+	position: absolute;
+	display: inline-block;
+	top: .2rem;
+	left: .2rem;
+	transition: all .2s linear;
+}
+#checkbox:checked + .toggle_label .toggle_ball{
+	transform: translateX(1rem);
+	background-color: #5FC3E4;
+}
+.toggle_btn{
+	height: 1rem;
+}
+.toggle_label{
+	width: 2rem;
+	height: 1.5rem;
+	background-color: white;
+	display: inline-block;
+	position: relative;
+	border-radius: 8rem;
+	text-align: left;
+}
+.toggle_ball{
+	width: 1rem;
+	height: 1rem;
+	border-radius: 100%;
+	background-color: black;
+	position: absolute;
+	display: inline-block;
+	top: .2rem;
+	left: .2rem;
+	transition: all .2s linear;
+}
+#checkbox:checked + .toggle_label .toggle_ball{
+	transform: translateX(1rem);
+	background-color: #5FC3E4;
+}
+.toggle_btn{
+	height: 1rem;
+}
+.overlay1{
+	position: absolute;
+	display: block;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,0.7);
+}
+.block2 h1{
+	position: relative;
+}
+.block2 h1::after{
+	content: "";
+	width: 60%;
+	height: 3px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background-color: rgb(15, 48, 60);
+}
+@keyframes linemove {
+	0%{
+		width:0;
+		left:0%
+	}
+	50%{
+		width: 60%;
+		left: 0%
+	}
+	100%{
+		width: 0%;
+		left: 60%;
+	}
+	
+}@keyframes linemove9 {
+	0%{
+		width:0;
+		left:37%
+	}
+	50%{
+		width: 26%;
+		left: 74%
+	}
+	100%{
+		width: 0;
+		left: 0%;
+	}
+	
+}
+@keyframes linemove6 {
+	0%{
+		width:0;
+		left:0%
+	}
+	50%{
+		width: 48%;
+		left: 0%
+	}
+	100%{
+		width: 0%;
+		left: 48%;
+	}
+	
+}
+@keyframes linemove3 {
+	0%{
+		width:0;
+		left:0%
+	}
+	50%{
+		width: 67%;
+		left: 0%
+	}
+	100%{
+		width: 0%;
+		left: 67%;
+	}
+	
+}
+.block2 h1:hover::after{
+	animation-name: linemove;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
+}
+.block3 h1{
+	position: relative;
+}
+.block3 h1::after{
+	content: "";
+	width: 67%;
+	height: 3px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background-color: rgb(15, 31, 60);
+}
+.block3 h1:hover::after{
+	animation-name: linemove3;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
+}
+.block6 h1{
+	position: relative;
+}
+.block6 h1::after{
+	content: "";
+	width: 48%;
+	height: 3px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background-color: rgb(15, 48, 60);
+}
+.block6 h1:hover::after{
+	animation-name: linemove6;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
+}
+.block9 h1{
+	position: relative;
+}
+.block9 h1::after{
+	content: "";
+	width: 30%;
+	height: 3px;
+	position: absolute;
+	bottom: 0;
+	left: 35%;
+	background-color: rgb(15, 48, 60);
+}
+.block9 h1:hover::after{
+	animation-name: linemove9;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
+}
+
+.slider{
+    background-color: lightblue;
+}
+.carousel-item active img{
+	margin-left: 800px;
+}
+.carousel-caption{
+	margin-bottom: 100px;
+}
+.carousel-caption h1{
+font-family: Cursive;
+font-style: italic;
+text-align: right;
+font-size: 80px;
+}
+.carousel-caption button{
+	text-align: right;
+	padding: 10px;
+	border-radius: 10%;
+	margin-left: 500px;
+	background-color: black;
+	color: white;
+           }
+.carousel-caption button:hover{
+	background-color: rgb(156, 221, 247);
+}
+.item{
+	display: inline-block;
+}
+.block5_img img{
+	margin-left: 410px;
+}
+.block5{
+	position: relative;
+	background-color: rgb(86, 252, 252);
+}
+.block5_contain{
+	position: absolute;
+	display: block;
+	top: 200px;
+	left: 150px;
+	right: 100px;
+	bottom: 400px;
+}
+.block5_contain h1{
+	font-size: 100px;
+	font-style: italic;
+}
+.block5_contain button{
+	background-color: black;
+	color: white;
+	padding-top: 10px;
+	padding-left: 35px;
+	padding-right: 35px;
+    padding-bottom: 10px;
+	font-weight: 100px;
+}
+.block5_contain button:hover{
+ background-color: rgb(86, 252, 252);
+}
+}
+.block2 h6{
+    text-align: right;
+}
+.block3 h6{
+    text-align: right;
+}
+.block6 h6{
+    text-align: right;
+}
+.col-lg-4 img:hover{
+	background-color: rgba(0,0,0,0.5);
+}
+.block10 p{
+    color: aqua;
+}
+.block10 a{
+    text-decoration: none;
+    color: black;
+}
+.carousel-inner.carousel-item active.carousel-caption{
+    max-width: 400px;
+}
+.block9_contain h3{
+	margin-top: -150px;
+}
+.block9_contain{
+	width: 400%;
+	height: auto;
+	position: absolute;
+	top: 0%;
+	left:-0%;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	transform: 2sec;
+	overflow: hidden;
+}
+.block9_img2{
+	position: relative;
+}
+.block9_img2:hover h3{
+	margin-top: 250px;
+	font-size: 40px;
+	color: white;
+	animation-name: instamove;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+	}
+@keyframes instamove{
+	from{
+		margin-top: 250px;
+		color: aqua;
+	}
+	to{
+		margin-top: 150px;
+		color: beige;
+	}
+}
